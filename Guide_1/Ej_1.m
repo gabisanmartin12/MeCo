@@ -44,7 +44,7 @@ FpointCollocation = subs(phi- psi, 'x', points');
 % Resolve system
 ApointCollocation = KpointCollocation\ FpointCollocation;
 
-% Compute de approximate solution
+% Compute the approximate solution
 phiPointCollocation       = eval(psi+ Nm* ApointCollocation);
 phiPointCollocationValues = subs(phiPointCollocation, 'x', domain);
 
